@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Niramit" rel="stylesheet">
+        <link rel="stylesheet" href="trivia.css" />
+        <title>Trivia 3000</title>
+    </head>
+    <body>
+        <div class="main">
+            <h1 class="logo">Trivia 3000</h1>
+            <div class="game-wrapper">
+                <div class="score-trackers">
+                    <div class="score-tracker">
+                        <h3>HIGH SCORE</h3>
+                        <div id="high-score" class="score">0</div>
+                    </div>
+                    <div class="score-tracker">
+                        <h3>CURRENT SCORE</h3>
+                        <div id="current-score" class="score">0 / 6</div>
+                    </div>
+                </div>
+                <div class="game" id="game">
+                    <div class="game-box" id="start-game-wrapper">
+                        <button class="btn btn-primary btn-lg" id="startGame">Start Game</button>
+                    </div>
+                    <div class="game-box" id="active-game-wrapper">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="trivia.js"></script>
+    </body>
+</html>

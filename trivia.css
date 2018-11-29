@@ -1,0 +1,139 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-size: 16px;
+    font-family: 'Niramit', sans-serif;
+}
+
+/* Utility Classes */
+.btn {
+    padding: 4px 12px;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: 0 1px 2px 2px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn.btn-primary {
+    background-color: hsla(205, 62%, 53%, 1);
+    color: #fff;
+}
+
+.btn.btn-primary:hover {
+    background-color: hsla(205, 69%, 47%, 1);
+}
+
+.btn.btn-lg {
+    font-size: 22px;
+    padding: 12px 28px;
+}
+
+/* Page Specific */
+.main { 
+    width: 980px;
+    margin: 0 auto;   
+}
+
+h1.logo {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Bungee Outline', cursive;
+    font-size: 60px;
+}
+
+.game-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    min-height: 400px;
+}
+
+.score-tracker {
+    margin-bottom: 15px;
+}
+
+.score-tracker h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 32px;
+    font-family: 'Bungee Outline', cursive;
+    text-align: center;
+}
+
+.score-tracker .score {
+    text-align: center;
+    font-size: 40px;
+}
+
+.game {
+    margin-left: 30px;
+    flex-grow: 1;
+    background: hsla(205, 60%, 85%, 1);
+    border-radius: 5px;
+    width: 70%;
+}
+
+.game-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+}
+
+#active-game-wrapper {
+    display: none;
+}
+
+.question {
+    padding: 30px;
+    height: 100%;
+}
+
+.question-title {
+    font-size: 24px;
+}
+
+.question-options {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.question-option {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Responsive styles */
+
+@media (max-width: 980px) {
+    .main {
+        width: 90%;
+    }
+    .game-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .score-trackers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .game {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
