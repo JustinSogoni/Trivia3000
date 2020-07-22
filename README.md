@@ -1,6 +1,5 @@
 # Trivia3000
-Trivia Game for my Relational Database &amp; Web Applications Course
-
+Trivia Game
 # Technologies/Languages:
 HTML,CSS,JavaScript,jQuery
 
